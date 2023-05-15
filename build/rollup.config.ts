@@ -13,15 +13,11 @@ const FILE = {
 
 const DIST_DIR = 'dist'
 const name = 'VueReactiveCollection'
-const external = ['@vue/composition-api']
-const globals = {
-  '@vue/composition-api': 'VueCompositionAPI',
-}
 const plugins = [
   common(),
   resolve(),
   replace({
-    'process.env.NODE_ENV': 'production',
+    'process.env.NODE_ENV': "'production'",
     preventAssignment: true,
   }),
   typescript({
@@ -32,12 +28,10 @@ const plugins = [
 export default [
   defineConfig({
     input: FILE.path,
-    external,
     output: [
       {
         file: `${DIST_DIR}/${FILE.name}.js`,
         format: 'umd',
-        globals,
         name,
       },
       {
@@ -53,11 +47,9 @@ export default [
   }),
   defineConfig({
     input: FILE.path,
-    external,
     output: {
       file: `${DIST_DIR}/${FILE.name}.min.js`,
       format: 'umd',
-      globals,
       name,
     },
     plugins: [terser({ format: { comments: false } })].concat(plugins),

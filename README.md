@@ -2,20 +2,18 @@
 
 ## Installation
 
-Reactive `Map` and `Set` for Vue 2 using [@vue/composition-api](https://github.com/vuejs/composition-api) plugin.
-
-Make sure [@vue/composition-api](https://github.com/vuejs/composition-api) is installed since `vue-reactive-collection` is built upon it.
+Reactive `Map` and `Set` for Vue 2.7
 
 ### NPM
 
 ```bash
-$ npm i vue-reactive-collection
+npm i vue-reactive-collection
 ```
 
 ### Yarn
 
 ```bash
-$ yarn add vue-reactive-collection
+yarn add vue-reactive-collection
 ```
 
 ## Usage

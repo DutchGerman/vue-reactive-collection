@@ -1,5 +1,6 @@
 # http://editorconfig.org
 root = true
+exclude_patterns = dist/*
 
 [*]
 charset = utf-8
@@ -12,3 +13,11 @@ insert_final_newline = true
 [{Makefile,**.mk}]
 indent_style = tab
 indent_size = 4
+
+[/dist/**]
+charset = unset
+indent_style = unset
+indent_size = unset
+end_of_line = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset

@@ -1,11 +1,10 @@
-import VueCompositionApi, { defineComponent } from '@vue/composition-api'
+import { defineComponent } from 'vue'
 import { createLocalVue, shallowMount, mount } from '@vue/test-utils'
 
 import { useReactiveMap, useReactiveSet } from '../src'
 
 describe('vue-reactive-collection', () => {
   let localVue = createLocalVue()
-  localVue.use(VueCompositionApi)
 
   describe('useReactiveMap', () => {
     describe('should accept the same arguments as original Map', () => {

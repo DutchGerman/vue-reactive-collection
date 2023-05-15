@@ -2,7 +2,7 @@
   "name": "vue-reactive-collection",
   "version": "0.1.1",
   "private": false,
-  "description": "Reactive Map and Set for Vue 2",
+  "description": "Reactive Map and Set for Vue 2.7",
   "keywords": [
     "vue",
     "reactivity",
@@ -56,7 +56,6 @@
     "@rollup/plugin-replace": "^4.0.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/jest": "^27.5.0",
-    "@vue/composition-api": "^1.6.1",
     "@vue/test-utils": "^1.3.0",
     "editorconfig-checker": "^4.0.2",
     "husky": "^7.0.4",
@@ -74,11 +73,10 @@
     "sort-package-json": "^1.57.0",
     "ts-jest": "^28.0.1",
     "typescript": "^4.6.4",
-    "vue": "^2.6.14",
-    "vue-template-compiler": "^2.6.14"
+    "vue": "^2.7.0",
+    "vue-template-compiler": "^2.7.0"
   },
   "peerDependencies": {
-    "@vue/composition-api": "x.x.x",
-    "vue": ">= 2.5 < 3"
+    "vue": ">= 2.7 < 3"
   }
 }
